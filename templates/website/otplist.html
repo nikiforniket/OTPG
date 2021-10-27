@@ -1,0 +1,108 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}
+OTP
+{% endblock title %}
+
+{% block header_title %}
+OTP List
+{% endblock header_title %}
+
+{% block activate_otp_list_icon %} 
+btn-clean active
+{% endblock activate_otp_list_icon %}
+
+
+{% block header_menu %}
+<div class="header-menu-wrapper header-menu-wrapper-left" id="kt_header_menu_wrapper">
+    <!--begin::Header Menu-->
+    <div id="kt_header_menu" class="header-menu header-menu-mobile header-menu-layout-default">
+        <!--begin::Header Nav-->
+        <ul class="menu-nav">
+            
+        </ul>
+        <!--end::Header Nav-->
+    </div>
+    <!--end::Header Menu-->
+</div>
+{% endblock header_menu %}
+
+{% block content_header %}
+<div class="subheader py-2 py-lg-4 subheader-transparent" id="kt_subheader">
+    <div class="container d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
+        <!--begin::Details-->
+        <div class="container-fluid row flex-wrap mr-2">
+            <div class="col-auto d-flex align-items-center">
+                <!--begin::Title-->
+                <h5 class="text-dark font-weight-bold mt-2 mb-2 mr-5">OTP's</h5>
+                <span class="text-dark-50 font-weight-bold" id="kt_subheader_total">0 Total</span>
+                <!--end::Title-->
+            </div>
+            <!--begin::Filter Actions-->
+            <!--end::Filter Actions-->
+        </div>
+        <!--end::Details-->
+    </div>
+</div>
+{% endblock content_header %}
+
+{% block content %}
+<div class="d-flex flex-column-fluid">
+    <!--begin::Container-->
+    <div class="container">
+        <!--begin::Card-->
+        <div class="card card-custom">
+            <!--begin::Header-->
+            <div class="card-header flex-wrap border-0 pt-6 pb-0">
+                <div class="card-title">
+                    <h3 class="card-label">OTP Management
+                    <span class="d-block text-muted pt-2 font-size-sm">OTP  management made easy</span></h3>
+                </div>
+                <div class="card-toolbar">
+                    <!--begin::Search Form-->
+                    <div class="d-flex align-items-center" id="kt_subheader_search">
+                        <div class="ml-5">
+                            <div class="input-group input-group-sm input-group-solid" style="max-width: 175px">
+                                <input type="text" class="form-control" id="kt_subheader_search_form" placeholder="Search..." />
+                                <div class="input-group-append">
+                                    <span class="input-group-text">
+                                        <span class="svg-icon">
+                                            <!--begin::Svg Icon | path:assets/media/svg/icons/General/Search.svg-->
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <rect x="0" y="0" width="24" height="24" />
+                                                    <path d="M14.2928932,16.7071068 C13.9023689,16.3165825 13.9023689,15.6834175 14.2928932,15.2928932 C14.6834175,14.9023689 15.3165825,14.9023689 15.7071068,15.2928932 L19.7071068,19.2928932 C20.0976311,19.6834175 20.0976311,20.3165825 19.7071068,20.7071068 C19.3165825,21.0976311 18.6834175,21.0976311 18.2928932,20.7071068 L14.2928932,16.7071068 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                                                    <path d="M11,16 C13.7614237,16 16,13.7614237 16,11 C16,8.23857625 13.7614237,6 11,6 C8.23857625,6 6,8.23857625 6,11 C6,13.7614237 8.23857625,16 11,16 Z M11,18 C7.13400675,18 4,14.8659932 4,11 C4,7.13400675 7.13400675,4 11,4 C14.8659932,4 18,7.13400675 18,11 C18,14.8659932 14.8659932,18 11,18 Z" fill="#000000" fill-rule="nonzero" />
+                                                </g>
+                                            </svg>
+                                            <!--end::Svg Icon-->
+                                        </span>
+                                        <!--<i class="flaticon2-search-1 icon-sm"></i>-->
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end::Search Form-->
+                </div>
+            </div>
+            <!--end::Header-->
+            <!--begin::Body-->
+            <div class="card-body">
+                <!--begin: Datatable-->
+                <div class="datatable datatable-bordered datatable-head-custom" id="kt_datatable"></div>
+                <!--end: Datatable-->
+            </div>
+            <!--end::Body-->
+        </div>
+        <!--end::Card-->
+    </div>
+    <!--end::Container-->
+</div>
+{% endblock content %}
+
+
+{% block page_specific_js %}
+<script src="{% static 'website/js/OTP-management/otps.js' %}"></script>
+{% endblock page_specific_js %}

@@ -1,0 +1,134 @@
+.login.login-3 .login-signin,
+.login.login-3 .login-signup,
+.login.login-3 .login-forgot,
+.login.login-3 .login-forgotsuccess,
+.login.login-3 .login-forgotsent ,
+.login.login-3 .login-signupsuccess{
+  display: none;
+}
+.login.login-3.login-signin-on .login-signup {
+  display: none;
+}
+.login.login-3.login-signin-on .login-signin {
+  display: block;
+}
+.login.login-3.login-signin-on .login-forgot {
+  display: none;
+}
+.login.login-3.login-signin-on .login-forgotsuccess {
+  display: none;
+}
+.login.login-3.login-signin-on .login-forgotsent {
+  display: none;
+}
+.login.login-3.login-signin-on .login-signupsuccess {
+  display: none;
+}
+
+.login.login-3.login-signup-on .login-signup {
+  display: block;
+}
+.login.login-3.login-signup-on .login-signin {
+  display: none;
+}
+.login.login-3.login-signup-on .login-forgot {
+  display: none;
+}
+.login.login-3.login-signup-on .login-forgotsuccess {
+  display: none;
+}
+.login.login-3.login-signup-on .login-forgotsent {
+  display: none;
+}
+.login.login-3.login-signup-on .login-signupsuccess {
+  display: none;
+}
+
+.login.login-3.login-forgot-on .login-signup {
+  display: none;
+}
+.login.login-3.login-forgot-on .login-signin {
+  display: none;
+}
+.login.login-3.login-forgot-on .login-forgot {
+  display: block;
+}
+.login.login-3.login-forgot-on .login-forgotsuccess {
+  display: none;
+}
+.login.login-3.login-forgot-on .login-forgotsent {
+  display: none;
+}
+.login.login-3.login-forgot-on .login-signupsuccess {
+  display: none;
+}
+
+
+.login.login-3.login-forgotsuccess-on .login-signup {
+  display: none;
+}
+.login.login-3.login-forgotsuccess-on .login-signin {
+  display: none;
+}
+.login.login-3.login-forgotsuccess-on .login-forgot {
+  display: none;
+}
+.login.login-3.login-forgotsuccess-on .login-forgotsuccess {
+  display: block;
+}
+.login.login-3.login-forgotsuccess-on .login-forgotsent {
+  display: none;
+}
+.login.login-3.login-forgotsuccess-on .login-signupsuccess {
+  display: none;
+}
+
+.login.login-3.login-forgotsent-on .login-signup {
+  display: none;
+}
+.login.login-3.login-forgotsent-on .login-signin {
+  display: none;
+}
+.login.login-3.login-forgotsent-on .login-forgot {
+  display: none;
+}
+.login.login-3.login-forgotsent-on .login-forgotsuccess {
+  display: none;
+}
+.login.login-3.login-forgotsent-on .login-forgotsent {
+  display: block;
+}
+.login.login-3.login-forgotsent-on .login-signupsuccess {
+  display: none;
+}
+
+.login.login-3.login-signupsuccess-on .login-signup {
+  display: none;
+}
+.login.login-3.login-signupsuccess-on .login-signin {
+  display: none;
+}
+.login.login-3.login-signupsuccess-on .login-forgot {
+  display: none;
+}
+.login.login-3.login-signupsuccess-on .login-forgotsuccess {
+  display: none;
+}
+.login.login-3.login-signupsuccess-on .login-forgotsent {
+  display: none;
+}
+.login.login-3.login-signupsuccess-on .login-signupsuccess {
+  display: block;
+}
+
+.login.login-3 .login-form {
+  width: 100%;
+  max-width: 450px;
+}
+
+@media (max-width: 575.98px) {
+  .login.login-3 .login-form {
+    width: 100%;
+    max-width: 100%;
+  }
+}
