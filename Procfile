@@ -1,0 +1,1 @@
+web: gunicorn otpg.wsgi --log-file -
